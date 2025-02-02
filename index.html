@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="scirpt.js">
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                Deepanshu's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <main> -->
+        <section class=" first-section">
+            <div class="leftsection">
+                <div>Software <span style="color: yellow;">Developer</span></div>
+                <span id="element"></span>
+                <!-- <div> Deepanshu soni</div> -->
+                <div> I am a tech enthusiast and a budding Front-End Developer. </div>
+                <div class="btn1">
+                    <button>Contact</button>
+                    <button> Projects</button>
+                    <button>Download CV</button>
+                </div>
+
+
+
+            </div>
+            <div class="rightsection">
+                <div class="image1">
+                    <img src="pic and video/finalimage.png.png" alt="">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ---------------------About------------------------ -->
+
+
+        <div class="about">
+            <span class="text">About Me</span>
+        </div>
+        <section class="second-section">
+
+            <div class="leftsecond">
+                <div class="line1">Hello! I am </div>
+                <div class="line2">Deepanshu soni</div>
+                <div class="line3">A Front-End Developer passionate about crafting seamless, responsive user interfaces.
+                    While I specialize in front-end technologies, I’m constantly learning and exploring new tools to
+                    enhance my skills and build better digital experiences.</div>
+
+                <div class="headers">
+                    <p class="tab-links active-header" onclick="opentab('skills')">Tech Stack</p>
+                    <!-- <p class="tab-links" onclick="opentab('Education')">Education</p> -->
+
+                </div>
+                <div class="tab-contents  active-tab " id="skills">
+                     <ul> 
+                         <li class="htmlimage"><img src="pic and video/html.png " alt="">
+                            <div class="texthtml"> HTML</div>
+                        </li>
+                        <li class="css"><img src="pic and video/css-3.png" alt="">
+                            <div>CSS</div>
+                        </li>
+                        <li class="Javasript">
+                            <img src="pic and video/js.png" alt="">
+                            <div> Javasript</div>
+                        </li>
+                        <li class="React">
+                            <img src="pic and video/react.png" alt="">
+                            <div>React</div>
+                        </li>
+                    </ul>
+                    <div > 
+                        <ul>
+                            <li class="cplus"><img src="pic and video/c++.png" alt="">
+                                <div>c++</div>
+                            </li>
+                            <li class="python"><img src="pic and video/python.png" alt="">
+                                <div>python</div>
+                            </li>
+                            <li class="c"><img src="pic and video/c.png" alt="">
+                                <div>c language</div>
+                            </li>
+                            <li class=""></li>
+                        </ul>
+                    </div>  
+
+                </div>
+                <!-- <div class="tab-contents" id="Education">
+                    <p>Class 10 (2019) – CBSE </p>
+                    <p>Class 12 (2021) – CBSE </p>
+                    <p> Graduation in Bachelor's in Computer Application</p>
+
+                </div> -->
+
+            </div>
+            <div class="rightsecond">
+                <div class="mypic">
+                    <img src="pic and video/me.png.jpg" alt="">
+                </div>
+            </div>
+
+<!-- ----------------------section 3------------------------------------------- -->
+        </section>
+        <section class="section3-project">
+            <div class="Projectheading"><p>Project</p></div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- </main> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('#element', {
+            strings: ['Front-End Developer', 'Technology Student ', "Tech Enthusiast"],
+            typeSpeed: 90,
+            loop: true,
+
+        });
+
+    </script>
+    <!-- <script>
+         var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+       
+        for (let tablink of tablinks) {
+            tablink.classList.remove('active-header');
+        }
+
+       
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-header");
+        document.getElementById(tabname).classList.add('active-tab')
+
+    }
+    </script> -->
+
+</body>
+
+</html>
