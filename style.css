@@ -1,13 +1,22 @@
-
 * {
     padding: 0;
     margin: 0;
     font-family: "Poppins", serif;
+
+
+}
+
+html,
+body {
+    width: 100%;
+    /* overflow-x: hidden; */
 }
 
 body {
     background-color: black;
     color: rgba(245, 245, 245, 0.685);
+
+
 }
 
 nav {
@@ -21,34 +30,53 @@ nav {
     align-items: center;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.562);
-    z-index: 999; /* Ensure nav stays on top */
+
+
 }
+
+
 
 nav ul {
     display: flex;
     justify-content: center;
+
+
 }
 
 nav ul li {
     list-style: none;
     margin: 0px 23px;
     font-size: larger;
+
+
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgba(245, 245, 245, 0.685);
+
 }
 
 .btn1 {
     display: flex;
     margin: 45px 0px 0px -26px;
     padding: 1px 23px;
+
 }
+
+/* .sec2-cv {
+    margin: 32px 40px ;
+    padding: 20px 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    } */
 
 .btn1 :hover {
     background-color: rgb(255, 240, 32);
     cursor: pointer;
+
 }
 
 .btn1>:first-child {
@@ -56,6 +84,9 @@ nav ul li a {
     margin-right: 30px;
     border-radius: 10px;
     font-size: 20px;
+
+
+
 }
 
 .btn1>:nth-child(2) {
@@ -64,6 +95,8 @@ nav ul li a {
     padding: 5px 30px;
     border-radius: 10px;
     font-size: 20px;
+
+
 }
 
 .btn1>:nth-child(3) {
@@ -71,18 +104,28 @@ nav ul li a {
     margin-right: 30px;
     border-radius: 10px;
     font-size: 20px;
+
+
+
 }
+
+
 
 nav ul li a:hover {
     color: yellow;
+    /* border: solid yellow 1px;
+    border-radius: 8px; */
     font-size: 22px;
+
 }
 
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+
 }
+
 
 .bar {
     width: 25px;
@@ -91,10 +134,13 @@ nav ul li a:hover {
     margin: 4px 0;
 }
 
+
+
 .left {
     font-size: 1.8rem;
     color: yellow;
 }
+
 
 .first-section {
     display: flex;
@@ -103,7 +149,7 @@ nav ul li a:hover {
     margin: 220px 0px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width:1250px) {
     .first-section {
         flex-direction: column;
     }
@@ -113,18 +159,24 @@ nav ul li a:hover {
     width: 30%;
     font-size: 20px;
     margin-bottom: auto;
+
 }
 
+
 .leftsection> :first-child {
+
     color: white;
     font-size: 5rem;
     line-height: 100px;
+
 }
 
 .leftsection> :nth-child(3) {
     margin-top: 10px;
     word-spacing: 4px;
     font-size: 20px;
+    /* text-shadow: 2px 2px rgba(255, 255, 255, 0.267); */
+
 }
 
 .leftsection> :nth-child(4) {
@@ -133,32 +185,41 @@ nav ul li a:hover {
 
 .rightsection {
     width: 30%;
+
 }
 
 .image1 {
     margin: 55px 0px;
     border: none;
     width: 100%;
+
 }
 
 #element {
     font-size: 3rem;
 }
 
-/* --------------------About------------------- */
+
+/* --------------------ABout------------------- */
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 80px;
+    /* color: yellow; */
+
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
     .about {
         text-align: right;
         align-items: self-end;
     }
 }
+
+
+
 
 .text {
     text-transform: uppercase;
@@ -171,15 +232,23 @@ nav ul li a:hover {
 .second-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* justify-content: space-around; */
+    /* Adds equal space around the divs */
     align-items: center;
+    /* Aligns items vertically */
     padding: 20px;
+    /* Optional padding */
 }
+
 
 .leftsecond,
 .rightsecond {
     width: 40%;
+    /* Adjust width as needed */
     padding: 20px;
+    /* Optional padding */
     margin: 100px 155px;
+
 }
 
 .line1 {
@@ -190,35 +259,51 @@ nav ul li a:hover {
 .line2 {
     font-size: 50px;
     color: white;
+
 }
 
 .line3 {
     font-size: 23px;
 }
 
+
+
 .mypic img {
     margin: 60px 150px;
     border: 2px solid rgb(219, 219, 10);
     height: 400px;
     border-radius: 70px;
+    /* opacity: 0.66; */
     cursor: none;
+
 }
 
-/* -----------------Skills Section-------------------- */
+
+
+
+/* -----------------skills section-------------------- */
+
 .headers {
     display: flex;
     margin: 27px 0px;
+    /* width: 150vh; */
     position: relative;
     right: 40px;
     color: rgb(180, 178, 21);
+    /* text-decoration: underline; 
+    text-decoration-color: yellow; */
     cursor: pointer;
+
+
 }
 
 .tab-links {
     margin: 0px 50px;
     font-size: 20px;
     position: relative;
+
 }
+
 
 .tab-links::after {
     content: '';
@@ -235,6 +320,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
+/* ---------------------content */
 .tab-contents ul {
     list-style: none;
 }
@@ -243,41 +329,94 @@ nav ul li a:hover {
     display: flex;
 }
 
-.htmlimage,
-.css,
-.Javasript,
-.React,
-.cplus,
-.c,
-.python {
+.htmlimage {
     color: white;
 }
 
-.htmlimage img,
-.css img,
-.Javasript img,
-.React img,
-.cplus img,
-.c img,
-.python img {
+.htmlimage img {
     height: 50px;
     width: 50px;
     background-color: black;
+    /* margin-bottom: 1px ; */
 }
 
-.css,
-.Javasript,
-.React,
-.c,
-.python {
+.css {
     margin-top: 20px;
+    color: white;
+}
+
+.css img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+.Javasript {
+    margin-top: 20px;
+    color: white;
+}
+
+.Javasript img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+.React {
+    margin-top: 20px;
+    color: white;
+
+}
+
+.React img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
 }
 
 .tab-contents> :nth-child(2) {
     margin: 0px 150px;
 }
 
-/* ----------------------Project Section--------------- */
+.cplus {
+    color: white;
+}
+
+.cplus img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+.c {
+    margin-top: 20px;
+    color: white;
+}
+
+.c img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+.python {
+    margin-top: 20px;
+    color: white;
+}
+
+.python img {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+
+}
+
+/* ----------------------project section--------------- */
 .section3-project {
     display: flex;
     justify-content: center;
@@ -286,35 +425,37 @@ nav ul li a:hover {
 }
 
 .Projectheading {
+    /* text-transform: uppercase; */
     background: linear-gradient(90deg, yellow, #fffdfbcb);
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 100vh;
+
 }
 
-/* ---------------------Contact Section------------------- */
+/* ---------------------contact section------------------- */
 .section4 {
     height: 100vh;
+
 }
 
 .contactheading {
     display: flex;
     justify-content: center;
     font-size: 80px;
+    /* text-transform: uppercase; */
     background: linear-gradient(90deg, yellow, #fffdfbcb);
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 .container4sec {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:20px;
+    display: flex;
     justify-content: space-around;
-    margin: 10px 230px;
-    
+    margin: 10px 40px;
 }
 
 .left4 {
@@ -326,7 +467,7 @@ nav ul li a:hover {
     position: relative;
     right: 8px;
     top: 70px;
-    height: 65vh;
+    height: 72vh;
     width: 70vh;
     background-color: #b3b32c33;
 }
@@ -336,6 +477,7 @@ nav ul li a:hover {
     font-size: 20px;
     opacity: 0.66;
     margin: 3px;
+
 }
 
 #input1 {
@@ -363,7 +505,9 @@ textarea {
     height: 28vh;
     padding: 9px 9px;
     margin-top: 10px;
+
 }
+
 
 .right4 {
     border-radius: 10px;
@@ -393,54 +537,55 @@ textarea {
 ::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: yellow;
 }
 
-/* -------------Breakpoints-------------- */
+/* ----------------------------media query----------------- */
 @media screen and (max-width: 1200px) {
     html {
         font-size: 25px;
     }
-    
+
     .leftsection,
     .rightsection {
         width: 100%;
     }
-    
+
     .first-section {
         flex-direction: column;
         margin: 100px 0px;
     }
-    
+
     .second-section {
         grid-template-columns: 1fr;
     }
-    
+
     .leftsecond,
     .rightsecond {
         width: 100%;
         margin: 50px 20px;
     }
-    
+
     .mypic img {
         margin: 30px auto;
         width: 80%;
         height: auto;
     }
-    
+
     .container4sec {
         flex-direction: column;
     }
-    
-    .left4
-    {
+
+    .left4 {
         width: 90%;
         margin: 20px auto;
         height: auto;
     }
+
     .right4 {
         width: 90%;
         position: inherit;
@@ -448,23 +593,21 @@ textarea {
         height: auto;
     }
 }
-    
-    #input1,
-    textarea {
-        width: 90%;
-        font-size: 20px;
-    }
-    
-        .container4sec
-        {
-            grid-template-columns: 1fr;
-        }
 
-        .section4
-        {
-                height: 150vmax;
-        }
+#input1,
+textarea {
+    width: 90%;
+    font-size: 20px;
 }
+
+.container4sec {
+    grid-template-columns: 1fr;
+}
+
+.section4 {
+    height: 150vmax;
+}
+
 
 @media screen and (max-width: 768px) {
     nav {
@@ -476,8 +619,14 @@ textarea {
         display: none;
     }
 
+    .tab-contents> :nth-child(2) {
+        margin: 0px 50px;
+    }
+
     .hamburger {
         display: flex;
+        position: relative;
+        left: 224px;
     }
 
     .nav-links {
@@ -503,9 +652,39 @@ textarea {
         margin: 50px 0px;
     }
 
-    .about,
+    .about {
+        font-size: 70px;
+        width: 60vh;
+    }
+
     .section3-project,
     .contactheading {
-        font-size: 50px;
+        font-size: 42px;
+        width: 60vh;
+    }
+
+    .btn1>:nth-child(3) , .btn>:nth-child(2) {
+        padding: 17px 20px;
+        font-size: 22px;
+      
+    }
+
+    .btn1>:first-child {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    .leftsection> :first-child {
+     
+        font-size: 4rem;
+     
+    }
+    .section4 {
+        width: fit-content;
+    }
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
     }
 }
