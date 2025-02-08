@@ -8,8 +8,11 @@
 
 html,
 body {
-    width: 100%;
-    /* overflow-x: hidden; */
+    /* width: 100%; */
+    overflow-x:visible;
+    max-width: 100%;
+    width: 100vw;
+    
 }
 
 body {
@@ -663,19 +666,29 @@ textarea {
         width: 60vh;
     }
 
-    .btn1>:nth-child(3) , .btn>:nth-child(2) {
+    .btn1
+    {
+        margin: 45px 0px 0px -25px;
+    }
+    .btn1>:nth-child(3)  {
         padding: 17px 20px;
         font-size: 22px;
       
+    }
+    .btn>:nth-child(2)
+    {
+        font-size: 22px;
     }
 
     .btn1>:first-child {
         font-size: 22px;
         margin-left: 15px;
+        padding: 20px 28px;
     }
     .leftsection> :first-child {
      
         font-size: 4rem;
+        margin-top: 80px;
      
     }
     .section4 {
