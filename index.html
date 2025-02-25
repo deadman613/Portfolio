@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav >
             <div class="left">
                 Deepanshu's Portfolio
             </div>
@@ -31,11 +31,7 @@
 
                 </ul>
             </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+           
         </nav>
     </header>
 
@@ -133,9 +129,36 @@
 
     </section>
     <!-- ----------------------section 3------------------------------------------- -->
+
+    <div class="portfolio-title">
+        <p>Portfolio Showcase</p>
+    </div>
     <section class="section3-project" id="projectlink">
         <div class="Projectheading">
-            <p>Portfolio Showcase</p>
+            <div class="netflix">
+                <img src="pic and video/netflix pp.png" alt="">
+                <div class="layer" id="l1">
+                    <h3>
+                        Netflix clone Website
+                    </h3>
+                    <p>Created a Netflix Clone using HTML, CSS, and JavaScript, featuring a responsive UI, movie
+                        listings, hover effects, and a functional search bar for an interactive experience.</p>
+
+                </div>
+
+            </div>
+            <div class="grocery">
+                <img src="pic and video/grocery  image pp.png" alt="">
+                <div class="layer" id="l2">
+                    <h3>
+                        Grocery Website
+                    </h3>
+                    <p>Built a Grocery Website using React.js and Tailwind CSS with a responsive UI, product listing,
+                        filtering, and a dynamic cart for a seamless shopping experience</p>
+
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -153,9 +176,19 @@
                 <input type="text" placeholder="Gmail" id="input1">
                 <textarea placeholder="Your Message" rows="5"></textarea>
             </div>
-            <div class="right4"> Lets Connect</div>
-            <!-- <input type="text" placeholder="Your Name" id="input1"> -->
-            <!-- <input type="text" placeholder="Gmail" id="input1"> -->
+            <div class="right4"> Lets Connect
+                <div class="btn-container">
+                    <a href="https://www.instagram.com/me_deepanshu_soni/" style="text-decoration: none "><button
+                            class="Instagram"><img src="pic and video/instagram.png" alt=""><span>Instagram</span> </button></a>
+                    <a href="https://www.linkedin.com/in/deepanshu-soni-628132256/"
+                        style="text-decoration: none "><button class="linkdin"><img src="pic and video/linkdin img.png" alt=""><span>Linkdin</span> </button></a>
+                    <a href="https://x.com/home?lang=en" style="text-decoration: none "><button class="Twitter"><img src="pic and video/twitter.png" alt=""><span>Twitter</span>
+                        </button></a>
+                </div>
+
+
+            </div>
+
         </div>
     </section>
 
@@ -173,17 +206,17 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('#element', {
-            strings: ['Front-End Developer', 'Technology Student ', "Tech Enthusiast"],
+            strings: ['Full-Stack Developer', 'Technology Student ', "Tech Enthusiast"],
             typeSpeed: 90,
             loop: true,
 
         });
-        const hamburger = document.querySelector('.humburger');
-        const navLinks = document.querySelector('.nav-links');
+        // const hamburger = document.querySelector('.humburger');
+        // const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-        });
+        // hamburger.addEventListener('click', () => {
+        //     navLinks.classList.toggle('nav-active');
+        // });
 
 
     </script>

@@ -9,10 +9,10 @@
 html,
 body {
     /* width: 100%; */
-    overflow-x:visible;
+    overflow-x: visible;
     max-width: 100%;
     width: 100vw;
-    
+
 }
 
 body {
@@ -126,6 +126,7 @@ nav ul li a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: aqua;
 
 }
 
@@ -174,6 +175,7 @@ nav ul li a:hover {
 
 }
 
+
 .leftsection> :nth-child(3) {
     margin-top: 10px;
     word-spacing: 4px;
@@ -218,6 +220,7 @@ nav ul li a:hover {
     .about {
         text-align: right;
         align-items: self-end;
+        margin: 0px 35px;
     }
 }
 
@@ -421,21 +424,113 @@ nav ul li a:hover {
 
 /* ----------------------project section--------------- */
 .section3-project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px;
+    height: 90vh;
+    width: 100%;
 }
 
-.Projectheading {
+.portfolio-title {
     /* text-transform: uppercase; */
     background: linear-gradient(90deg, yellow, #fffdfbcb);
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    height: 100vh;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+
 
 }
+
+.Projectheading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    height: 90vh;
+
+}
+
+.grocery {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    height: 60vh;
+    width: 70vh;
+    margin: 50px 100px;
+    border: solid 2px rgb(230, 226, 171);
+    border-radius: 20px;
+
+
+
+}
+
+.grocery img {
+    width: 70vh;
+    border-radius: 10vh;
+    transition: transform 0.5s;
+}
+
+.netflix {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border: solid 2px rgb(230, 226, 171);
+    border-radius: 20px;
+    margin: 50px 140px;
+    width: 70vh;
+    height: 60vh;
+    /* height: 60vh;
+    width: 60vh; */
+}
+
+.netflix img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 70vh;
+    height: 0vh;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 900;
+    background: linear-gradient(to top, rgba(235, 235, 26, 0.815), rgba(255, 255, 255, 0.336));
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    transition: height 0.5s;
+
+
+}
+
+.layer h3 {
+    font-size: 20px;
+}
+
+.layer p {
+    margin: 20px 50px;
+}
+
+.netflix:hover img,
+.grocery:hover img {
+    transform: scale(1.02);
+
+}
+
+.netflix:hover #l1 {
+    height: 60vh;
+}
+
+.grocery:hover #l2 {
+    height: 60vh;
+}
+
 
 /* ---------------------contact section------------------- */
 .section4 {
@@ -513,6 +608,8 @@ textarea {
 
 
 .right4 {
+
+    position: relative;
     border-radius: 10px;
     padding: 20px 20px;
     margin: 38px;
@@ -524,8 +621,67 @@ textarea {
     height: 55vh;
     width: 60vh;
     background-color: #b3b32c33;
-    align-items: flex-start;
+
+
 }
+
+.btn-container {
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.linkdin,
+.Twitter,
+.Instagram {
+
+    display: flex;
+    background-color: white;
+    margin: 15px 0px 0px 0px;
+    padding: 5px 5px;
+    height: 10vh;
+    font-size: 20px;
+    text-align: left;
+    width: 50vh;
+    padding: 2px 10px;
+    align-items: center;
+    background: #ffff0033;
+    color: white;
+    border-radius: 19px;
+    transition: .5s;
+
+
+}
+
+.Instagram img,
+.Twitter img,
+.linkdin img {
+    height: 30px;
+    margin: 3px 10px 0px 0px;
+    width: auto;
+}
+
+
+.Instagram span,
+.linkdin span,
+.Twitter span {
+    background: linear-gradient(90deg, yellow, white);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.linkdin:hover,
+.Twitter:hover,
+.Instagram:hover {
+    border: solid 2px white;
+    transform: scale(1.03);
+
+}
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -569,8 +725,11 @@ textarea {
 
     .leftsecond,
     .rightsecond {
+        /* width: 100%;
+        margin: 50px 20px; */
         width: 100%;
-        margin: 50px 20px;
+        margin: 50px -4px;
+        font-size: 17px;
     }
 
     .mypic img {
@@ -584,8 +743,12 @@ textarea {
     }
 
     .left4 {
-        width: 90%;
+        /* width: 90%;
         margin: 20px auto;
+        height: auto; */
+        width: 92%;
+        margin: 20px 7px;
+        padding: 22px 14px;
         height: auto;
     }
 
@@ -594,6 +757,25 @@ textarea {
         position: inherit;
         margin: 100px -6px;
         height: auto;
+        /* width: 66%;
+        margin: 20px 7px;
+        padding: 22px 14px;
+        height: auto; */
+    }
+    .right4 .Instagram,.Twitter,.linkdin
+    {
+        width: 35vh;
+
+    }
+
+    .Projectheading {
+        grid-template-columns: 1fr;
+    }
+
+    .netflix,
+    .grocery {
+        width: 60vh;
+        border: solid 2px rgb(230, 226, 171);
     }
 }
 
@@ -616,7 +798,13 @@ textarea {
     nav {
         flex-direction: column;
         height: auto;
+        width: 42vh;
+        
     }
+    nav .left{
+        font-size: 20px;
+    }
+
 
     .right {
         display: none;
@@ -630,6 +818,7 @@ textarea {
         display: flex;
         position: relative;
         left: 224px;
+        color: aqua;
     }
 
     .nav-links {
@@ -652,52 +841,100 @@ textarea {
     }
 
     .first-section {
-        margin: 50px 0px;
+        margin: 73px 15px;
     }
 
     .about {
-        font-size: 70px;
-        width: 60vh;
+        font-size: 2.2rem;
+        width: 42vh;
     }
 
-    .section3-project,
+    .portfolio-title,
     .contactheading {
-        font-size: 42px;
+        /* font-size: 42px;
         width: 60vh;
+        margin: 10px 58px; */
+        font-size: 1.9rem;
+        width: 36vh;
+        margin: 12px 51px;
     }
 
-    .btn1
-    {
-        margin: 45px 0px 0px -25px;
+    .btn1 {
+        margin: 45px -25px 0px ;
     }
-    .btn1>:nth-child(3)  {
+
+    /* .btn1>:nth-child(3) {
         padding: 17px 20px;
         font-size: 22px;
-      
-    }
-    .btn>:nth-child(2)
-    {
-        font-size: 22px;
+
     }
 
-    .btn1>:first-child {
+    .btn>:nth-child(2) {
         font-size: 22px;
-        margin-left: 15px;
-        padding: 20px 28px;
+    } */
+
+    .btn1>:first-child,.btn1>:nth-child(3),.btn1>:nth-child(2) {
+        font-size: 17px;
+        margin-left: 0px;
+        padding: 3px 10px;
     }
+    .image1 img
+    {
+        width: 36vh;
+        padding: 8px 35px;
+    }
+
     .leftsection> :first-child {
-     
-        font-size: 4rem;
+
+        font-size: 2.5rem;
         margin-top: 80px;
-     
+
     }
+    #element
+    {
+        font-size: 2.2rem;
+    }
+
     .section4 {
         width: fit-content;
+        margin: 184px 7px;
     }
+
     body {
         margin: 0;
         height: 100vh;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
     }
+
+    .section3-project {
+        height: 105vh;
+    }
+
+
+    .netflix {
+        /* margin: 50px 0px;
+        transition: height 0.5; */
+        margin: 50px -4px;
+        width: 45vh;
+        height: 40vh;
+    }
+
+    .netflix:hover #l1, .grocery:hover #l2 {
+        width: 45vh;
+        height: 40vh;
+    }
+    .grocery{
+        margin: 50px 0px 5px;
+        width: 45vh;
+        height: 40vh;
+    }
+    .grocery img
+    {
+        width: 45vh;
+        height: 40vh;
+    }
+   
+    
+    
 }
