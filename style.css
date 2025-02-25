@@ -9,7 +9,7 @@
 html,
 body {
     /* width: 100%; */
-    overflow-x: visible;
+    overflow-x: hidden;
     max-width: 100%;
     width: 100vw;
 
@@ -915,24 +915,24 @@ textarea {
     .netflix {
         /* margin: 50px 0px;
         transition: height 0.5; */
-        margin: 50px -4px;
-        width: 45vh;
-        height: 40vh;
+        margin: 50px 0px;
+        width: 38vh;
+        height: 38vh;
     }
 
     .netflix:hover #l1, .grocery:hover #l2 {
-        width: 45vh;
-        height: 40vh;
+        width: 38vh;
+        height: 38vh;
     }
     .grocery{
         margin: 50px 0px 5px;
-        width: 45vh;
-        height: 40vh;
+        width: 38vh;
+        height: 38vh;
     }
     .grocery img
     {
-        width: 45vh;
-        height: 40vh;
+        width: 38vh;
+        height: 38vh;
     }
    
     
