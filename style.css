@@ -9,7 +9,7 @@
 html,
 body {
     /* width: 100%; */
-    overflow-x: hidden;
+    overflow-x: visible;
     max-width: 100%;
     width: 100vw;
 
@@ -762,8 +762,10 @@ textarea {
         padding: 22px 14px;
         height: auto; */
     }
-    .right4 .Instagram,.Twitter,.linkdin
-    {
+
+    .right4 .Instagram,
+    .Twitter,
+    .linkdin {
         width: 35vh;
 
     }
@@ -799,9 +801,10 @@ textarea {
         flex-direction: column;
         height: auto;
         width: 42vh;
-        
+
     }
-    nav .left{
+
+    nav .left {
         font-size: 20px;
     }
 
@@ -860,7 +863,7 @@ textarea {
     }
 
     .btn1 {
-        margin: 45px -25px 0px ;
+        margin: 45px -25px 0px;
     }
 
     /* .btn1>:nth-child(3) {
@@ -873,13 +876,15 @@ textarea {
         font-size: 22px;
     } */
 
-    .btn1>:first-child,.btn1>:nth-child(3),.btn1>:nth-child(2) {
+    .btn1>:first-child,
+    .btn1>:nth-child(3),
+    .btn1>:nth-child(2) {
         font-size: 17px;
         margin-left: 0px;
         padding: 3px 10px;
     }
-    .image1 img
-    {
+
+    .image1 img {
         width: 36vh;
         padding: 8px 35px;
     }
@@ -890,8 +895,8 @@ textarea {
         margin-top: 80px;
 
     }
-    #element
-    {
+
+    #element {
         font-size: 2.2rem;
     }
 
@@ -915,26 +920,31 @@ textarea {
     .netflix {
         /* margin: 50px 0px;
         transition: height 0.5; */
-        margin: 50px 0px;
+        margin: 50px -4px;
         width: 38vh;
-        height: 38vh;
+        height: 40vh;
+    }
+    .layer h3 {
+        font-size: 17px;
     }
 
-    .netflix:hover #l1, .grocery:hover #l2 {
+    .netflix:hover #l1,
+    .grocery:hover #l2 {
         width: 38vh;
-        height: 38vh;
+        height: 40vh;
     }
-    .grocery{
+
+    .grocery {
         margin: 50px 0px 5px;
         width: 38vh;
-        height: 38vh;
+        height: 40vh;
     }
-    .grocery img
-    {
+
+    .grocery img {
         width: 38vh;
-        height: 38vh;
+        height: 40vh;
     }
-   
-    
-    
+
+
+
 }
