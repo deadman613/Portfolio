@@ -801,6 +801,7 @@ textarea {
         flex-direction: column;
         height: auto;
         width: 42vh;
+        margin: 0px 20px;
 
     }
 
@@ -808,10 +809,18 @@ textarea {
         font-size: 20px;
     }
 
+    nav .right
+    {
+        font-size: 15px;
+       
 
-    .right {
-        display: none;
+    } 
+    nav ul li a
+    {
+        margin: 0px -2px;
     }
+  
+    
 
     .tab-contents> :nth-child(2) {
         margin: 0px 50px;
